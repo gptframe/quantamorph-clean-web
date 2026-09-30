@@ -3,240 +3,261 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quantamorph Limited — Precision CNC Manufacturing & Mechanical Engineering</title>
-  <meta name="description" content="Quantamorph Limited manufactures precision CNC machined components, tooling, fixtures, and provides mechanical CAD design services.">
+  <title>Quantamorph Limited — Precision Mechanical Engineering & Manufacturing</title>
+  <meta name="description" content="Quantamorph Limited manufactures bespoke precision CNC components, special purpose machinery, checking fixtures, press tooling, and provides complete mechanical CAD design.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- Three.js CDN for interactive 3D WebGL viewport -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-  <!-- Fixed 3D WebGL Background Canvas (Mechanical Gear, Turning Shaft & Milling Cutter) -->
-  <canvas id="webgl-canvas"></canvas>
-
-  <!-- Sticky Top Navigation -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#" class="brand-logo">
-        <span class="brand-mark">QM</span>
-        <span class="brand-name">QUANTAMORPH</span>
-      </a>
-      <nav class="main-nav">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo">Quantamorph</a>
+      <nav class="nav">
         <a href="#overview">Overview</a>
-        <a href="#operations">Machining Operations</a>
-        <a href="#gallery">Production Gallery</a>
-        <a href="#services">Services</a>
-        <a href="#contact" class="btn-nav">Request Quotation</a>
+        <a href="#services">Design & CAD</a>
+        <a href="#manufacturing">Manufacturing</a>
+        <a href="#fixtures">Fixtures & SPM</a>
+        <a href="#quality">Quality & Metrology</a>
+        <a href="#contact" class="nav-cta">Get a Quote</a>
       </nav>
     </div>
   </header>
 
-  <!-- Content Wrapper -->
-  <main class="content-wrapper">
+  <main>
     <!-- Hero Section -->
-    <section id="overview" class="hero-stage">
-      <div class="container">
-        <div class="hero-content">
-          <div class="hud-tag">PRECISION MANUFACTURING & COMPONENT PRODUCTION</div>
-          <h1 class="hero-title">Precision Machining.<br><span class="gradient-text">Milled, Turned & Ground.</span></h1>
-          <p class="hero-desc">
-            Quantamorph Limited manufactures bespoke precision CNC components, press tooling, fixtures, and sub-assemblies. Supported by comprehensive in-house mechanical CAD design, DFM reviews, and full metrology inspection.
-          </p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Submit Drawing / RFQ</a>
-            <a href="#operations" class="btn btn-secondary">Explore Operations</a>
-          </div>
+    <section id="overview" class="hero">
+      <div class="container hero-inner">
+        <div class="eyebrow">Engineering. Design. Manufacture.</div>
+        <h1 class="hero-title">Precision engineered.<br>Manufactured to scale.</h1>
+        <p class="hero-subtitle">
+          Quantamorph Limited delivers bespoke CNC-machined components, special purpose machinery, inspection fixtures, and complete mechanical design engineering for industrial automation, automotive, and OEMs.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Request a Quotation</a>
+          <a href="#manufacturing" class="btn btn-secondary">Explore Capabilities</a>
         </div>
       </div>
-      <div class="scroll-indicator">
-        <span>SCROLL TO VIEW MACHINING OPERATIONS</span>
-        <div class="mouse-icon"></div>
+      <div class="hero-image-wrap">
+        <img src="https://raw.githubusercontent.com/gptframe/QM-web/main/turned_gears.jpg" alt="Precision Turned and Machined Engineering Components" class="hero-img">
       </div>
     </section>
 
-    <!-- Machining Operations Section -->
-    <section id="operations" class="stage-section">
+    <!-- Two Core Pillars Grid -->
+    <section id="services" class="section">
       <div class="container">
-        <div class="section-title-wrap">
-          <div class="hud-tag">CORE MANUFACTURING PROCESSES</div>
-          <h2>CNC Machining Operations</h2>
-          <p class="section-sub">Engineered for batch manufacturing, tight tolerances, and superior surface integrity.</p>
+        <div class="section-header">
+          <div class="section-tag">Capabilities</div>
+          <h2 class="section-title">Two core strengths. One unified partner.</h2>
+          <p class="section-desc">From initial 3D parametric CAD modeling and DFM analysis to multi-axis CNC machining, assembly, and CMM metrology.</p>
         </div>
 
-        <div class="operations-grid">
-          <!-- 1. CNC Turning -->
-          <div class="op-card">
-            <div class="op-header">
-              <span class="op-code">OP-01 // LATHE</span>
-              <h3>CNC Turning & Turn-Mill</h3>
-            </div>
-            <p>High-precision turning of shafts, bushings, stepped pins, spool retainers, and rotational components with live-tooling capabilities.</p>
-            <ul class="op-specs">
-              <li><span>Turning Envelope</span><strong>Ø5 mm – Ø350 mm</strong></li>
-              <li><span>Tolerances</span><strong>Down to ±0.005 mm</strong></li>
-              <li><span>Key Parts</span><strong>Shafts, Flanges, Retainer Sleeves, Bushings</strong></li>
+        <div class="bento-grid">
+          <!-- Card 1: CAD & Design -->
+          <div class="bento-card">
+            <div class="card-eyebrow">Pillar 01</div>
+            <h3>Mechanical CAD & Engineering Design</h3>
+            <p>Complete design lifecycle support. We convert rough concepts, legacy 2D drawings, or physical samples into verified, production-ready 3D parametric models and manufacturing prints.</p>
+            <ul class="feature-list">
+              <li><strong>3D CAD Modeling & Assemblies</strong> — Fusion 360, SolidWorks, CATIA</li>
+              <li><strong>2D Manufacturing Drawings</strong> — Strict GD&T, datum structures, BS 8888 / ISO standards</li>
+              <li><strong>Design for Manufacture (DFM)</strong> — Geometry optimization, tool clearance, cost reduction</li>
+              <li><strong>Reverse Engineering</strong> — Physical components and 3D point clouds converted to CAD</li>
+              <li><strong>Tooling & SPM Design</strong> — Checking fixtures, welding jigs, progressive press dies</li>
             </ul>
           </div>
 
-          <!-- 2. CNC Milling -->
-          <div class="op-card highlight">
-            <div class="op-header">
-              <span class="op-code">OP-02 // 3/4/5-AXIS</span>
-              <h3>CNC Multi-Axis Milling</h3>
-            </div>
-            <p>High-speed 3-, 4-, and 5-axis CNC machining for complex 3D prismatics, deep pocket cavity tooling, robot mounts, and manifolds.</p>
-            <ul class="op-specs">
-              <li><span>Milling Envelope</span><strong>Up to 1200 × 600 × 500 mm</strong></li>
-              <li><span>Surface Finish</span><strong>Ra 0.4 – 1.6 µm</strong></li>
-              <li><span>Key Parts</span><strong>End-effectors, Manifolds, Fixture Plates</strong></li>
-            </ul>
-          </div>
-
-          <!-- 3. Surface & Cylindrical Grinding -->
-          <div class="op-card">
-            <div class="op-header">
-              <span class="op-code">OP-03 // FINISHING</span>
-              <h3>Precision Grinding</h3>
-            </div>
-            <p>Surface grinding and cylindrical grinding for hardened tool steels, punch blocks, bronze slide plates, and precision datum surfaces.</p>
-            <ul class="op-specs">
-              <li><span>Flatness / Parallelism</span><strong>Within 0.003 mm</strong></li>
-              <li><span>Hardened Materials</span><strong>Up to 62 HRC (D2, O1, EN19)</strong></li>
-              <li><span>Key Parts</span><strong>Wear Plates, Punch Dies, Stripper Details</strong></li>
+          <!-- Card 2: CNC Manufacture -->
+          <div class="bento-card">
+            <div class="card-eyebrow">Pillar 02</div>
+            <h3>Precision CNC Manufacturing</h3>
+            <p>Comprehensive machining capabilities across multi-axis VMC milling, high-precision turning, precision grinding, and sheet metal fabrication.</p>
+            <ul class="feature-list">
+              <li><strong>Multi-Axis VMC Milling</strong> — Envelopes up to 1250 × 500 × 500 mm</li>
+              <li><strong>CNC Turning & Turn-Mill</strong> — Diameters from Ø5 mm up to Ø500 mm</li>
+              <li><strong>Precision Surface Grinding</strong> — Flatness & parallelism within 0.003 mm</li>
+              <li><strong>Materials</strong> — Aluminium (6082/7075), Stainless (304/316), EN19/42CrMo4, Tool Steels (D2/O1), Bronze, Engineering Plastics</li>
+              <li><strong>Surface Finishes</strong> — Hard Anodising, Black Oxide, Passivation, Plating, Heat Treatment (up to 62 HRC)</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Real Component & Production Gallery -->
-    <section id="gallery" class="stage-section gallery-stage">
+    <!-- Visual Manufacturing Showcase -->
+    <section id="manufacturing" class="section bg-card-surface">
       <div class="container">
-        <div class="section-title-wrap">
-          <div class="hud-tag">SHOP FLOOR & INSPECTION</div>
-          <h2>Production & Component Gallery</h2>
-          <p class="section-sub">Real component manufacturing across metals, tooling assemblies, and precision turned gears.</p>
+        <div class="section-header">
+          <div class="section-tag">Operations</div>
+          <h2 class="section-title">Engineered for real-world manufacturing.</h2>
+          <p class="section-desc">A look into our machining operations, tooling assemblies, and production output.</p>
         </div>
 
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="https://raw.githubusercontent.com/gptframe/QM-web/main/turned_gears.jpg" alt="CNC Turned and Machined Gears" loading="lazy">
-            <div class="gallery-caption">
-              <strong>Precision Turned Gears & Shafts</strong>
-              <span>CNC Turned & Hobbed Alloy Steel</span>
+        <div class="showcase-grid">
+          <div class="showcase-card">
+            <div class="showcase-img-wrap">
+              <img src="https://raw.githubusercontent.com/gptframe/QM-web/main/stage3_milling.jpg" alt="VMC Multi-Axis Machining">
+            </div>
+            <div class="showcase-body">
+              <h4>Multi-Axis CNC Milling</h4>
+              <p>High-speed milling for complex prismatic parts, manifold blocks, robot end-effectors, and deep-pocket tooling.</p>
             </div>
           </div>
 
-          <div class="gallery-item">
-            <img src="https://raw.githubusercontent.com/gptframe/QM-web/main/stage3_milling.jpg" alt="5-Axis CNC Milling Operation" loading="lazy">
-            <div class="gallery-caption">
-              <strong>Multi-Axis CNC Milling</strong>
-              <span>Aluminium 6082-T6 Precision Pocketing</span>
+          <div class="showcase-card">
+            <div class="showcase-img-wrap">
+              <img src="https://raw.githubusercontent.com/gptframe/QM-web/main/turned_gears.jpg" alt="CNC Turning and Gears">
+            </div>
+            <div class="showcase-body">
+              <h4>Precision CNC Turning</h4>
+              <p>Rotational components, shafts, bushings, stepped pins, and spool retainers held to tight runout and dimensional tolerances.</p>
             </div>
           </div>
 
-          <div class="gallery-item">
-            <img src="https://raw.githubusercontent.com/gptframe/QM-web/main/press_tool.jpg" alt="Press Tooling and Stamping Assembly" loading="lazy">
-            <div class="gallery-caption">
-              <strong>Press Tool & Die Assembly</strong>
-              <span>Progression Tooling & Spool Retainers</span>
+          <div class="showcase-card">
+            <div class="showcase-img-wrap">
+              <img src="https://raw.githubusercontent.com/gptframe/QM-web/main/press_tool.jpg" alt="Press Tooling and Dies">
+            </div>
+            <div class="showcase-body">
+              <h4>Press Tools, Dies & Fixtures</h4>
+              <p>Progressive dies, checking fixtures, welding nests, and wear-resistant tooling for automotive and industrial lines.</p>
             </div>
           </div>
 
-          <div class="gallery-item">
-            <img src="https://raw.githubusercontent.com/gptframe/QM-web/main/stage4_inspect.jpg" alt="Quality Metrology and CMM Inspection" loading="lazy">
-            <div class="gallery-caption">
-              <strong>100% Metrology & Inspection</strong>
-              <span>CMM Coordinate & Dimensional Verification</span>
+          <div class="showcase-card">
+            <div class="showcase-img-wrap">
+              <img src="https://raw.githubusercontent.com/gptframe/QM-web/main/stage4_inspect.jpg" alt="Quality Inspection and CMM">
+            </div>
+            <div class="showcase-body">
+              <h4>Quality & Metrology Inspection</h4>
+              <p>Strict dimensional inspection using high-precision digital height gauges, bore micrometers, and surface plates.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Two Core Pillars -->
-    <section id="services" class="stage-section">
-      <div class="container stage-grid">
-        <div class="glass-card">
-          <div class="card-num">CORE PILLAR // 01</div>
-          <h2>Mechanical Design Services</h2>
-          <p class="card-lead">End-to-end 3D CAD design, manufacturing prints, and design for manufacture (DFM) verification for custom hardware and tooling.</p>
-          <ul class="spec-list">
-            <li><span>3D CAD Assemblies</span><strong>Fusion 360 · SolidWorks · CATIA</strong></li>
-            <li><span>Manufacturing Prints</span><strong>2D Drawings with Strict GD&T</strong></li>
-            <li><span>Engineering Review</span><strong>DFM & Cost-Tolerance Optimisation</strong></li>
-            <li><span>Reverse Engineering</span><strong>Physical Parts to Parametric CAD</strong></li>
-            <li><span>Tooling & Fixtures</span><strong>Checking Fixtures & Nest Tooling</strong></li>
-          </ul>
+    <!-- Special Purpose Machines & Fixtures -->
+    <section id="fixtures" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Specialized Solutions</div>
+          <h2 class="section-title">Special Purpose Machinery & Fixturing</h2>
+          <p class="section-desc">Custom mechanical solutions built to solve specific assembly, testing, and production bottlenecks.</p>
         </div>
 
-        <div class="glass-card highlight">
-          <div class="card-num">CORE PILLAR // 02</div>
-          <h2>CNC Manufacturing Support</h2>
-          <p class="card-lead">Precision machining, multi-axis milling and turning, and quality-controlled delivery to tight tolerances.</p>
-          <ul class="spec-list">
-            <li><span>Machining Envelope</span><strong>2-, 3-, 4- and 5-Axis Milling & Turning</strong></li>
-            <li><span>Achievable Tolerance</span><strong>Down to ±0.005 mm</strong></li>
-            <li><span>Material Spectrum</span><strong>Aluminium, Stainless, EN19, Bronze, Delrin</strong></li>
-            <li><span>Tooling Components</span><strong>Spool Retainers, Guide Plates, Punch Blocks</strong></li>
-            <li><span>Quality & Metrology</span><strong>100% CMM & Dimensional Inspection</strong></li>
-          </ul>
+        <div class="specs-columns">
+          <div class="spec-col">
+            <h4>Checking Fixtures & Gauges</h4>
+            <p>Custom component nests, flush and gap gauges, and GO/NO-GO checking fixtures designed with ergonomic clamping for rapid quality verification on production lines.</p>
+          </div>
+          <div class="spec-col">
+            <h4>Welding & Assembly Jigs</h4>
+            <p>Robust robotic and manual welding fixtures featuring hardened datum blocks, pneumatic clamps, and quick-change wear details to maintain repeatability.</p>
+          </div>
+          <div class="spec-col">
+            <h4>Special Purpose Machines (SPM)</h4>
+            <p>End-to-end SPM conceptualization, CAD mechanical layout, component machining, assembly, and proving for dedicated manufacturing tasks.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact / RFQ Stage -->
-    <section id="contact" class="stage-section contact-stage">
+    <!-- Quality & Metrology Section -->
+    <section id="quality" class="section bg-card-surface">
       <div class="container">
-        <div class="glass-form-card">
-          <div class="hud-tag">DIRECT TECHNICAL INTAKE</div>
-          <h2>Submit an RFQ or Component Drawing</h2>
-          <p class="form-sub">Upload your STEP, IGES, or 2D manufacturing prints for technical DFM review and quotation.</p>
+        <div class="quality-box">
+          <div class="quality-content">
+            <div class="section-tag">Quality Assurance</div>
+            <h2>Rigorous Quality & Metrology Standards</h2>
+            <p>Every machined component, fixture, and assembly undergoes multi-stage inspection before dispatch. We measure against precise drawing datums and GD&T tolerances.</p>
+            <div class="instrument-grid">
+              <div class="instrument-item">
+                <strong>2D Digital Height Gauges</strong>
+                <span>Trimos & Digimar High-Accuracy Measurement</span>
+              </div>
+              <div class="instrument-item">
+                <strong>Precision Micrometers & Bore Gauges</strong>
+                <span>Mitutoyo Calibrated 0–150 mm Sets</span>
+              </div>
+              <div class="instrument-item">
+                <strong>Granite Surface Tables</strong>
+                <span>Precision Grade Datum Inspection Plates</span>
+              </div>
+              <div class="instrument-item">
+                <strong>Full Material Traceability</strong>
+                <span>Certified Mill Certificates & Heat Treat Reports</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <form class="rfq-grid-form" action="mailto:info@quantamorph.com" method="post" enctype="text/plain">
-            <div class="input-group">
-              <label>FULL NAME</label>
-              <input type="text" placeholder="John Doe" required>
+    <!-- Contact & RFQ Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-card">
+          <div class="section-header">
+            <div class="section-tag">Direct Technical Intake</div>
+            <h2 class="section-title">Submit an RFQ or Drawing</h2>
+            <p class="section-desc">Share your 3D CAD models (STEP/IGES), 2D manufacturing prints, or project specifications for review and quotation.</p>
+          </div>
+
+          <form class="contact-form" action="mailto:info@quantamorph.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label>Company Name</label>
+                <input type="text" placeholder="Acme Engineering Ltd" required>
+              </div>
             </div>
-            <div class="input-group">
-              <label>COMPANY NAME</label>
-              <input type="text" placeholder="Acme Automation Ltd" required>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="john@company.co.uk" required>
+              </div>
+              <div class="form-group">
+                <label>Service Category</label>
+                <select>
+                  <option>CNC Batch Component Manufacture</option>
+                  <option>Mechanical CAD Design & 2D Prints</option>
+                  <option>Checking Fixtures & Welding Jigs</option>
+                  <option>Special Purpose Machine (SPM)</option>
+                  <option>Reverse Engineering & DFM Review</option>
+                </select>
+              </div>
             </div>
-            <div class="input-group">
-              <label>WORK EMAIL</label>
-              <input type="email" placeholder="name@company.co.uk" required>
+
+            <div class="form-group">
+              <label>Project Details / Specification</label>
+              <textarea rows="4" placeholder="Specify batch quantity, material grade, key tolerances, or CAD requirements..."></textarea>
             </div>
-            <div class="input-group">
-              <label>REQUIRED OPERATION</label>
-              <select>
-                <option>CNC Batch Component Manufacture (Milling / Turning)</option>
-                <option>Precision Tooling, Jigs & Fixture Manufacture</option>
-                <option>Mechanical CAD Design & 2D Prints</option>
-                <option>Reverse Engineering & Precision Grinding</option>
-              </select>
-            </div>
-            <div class="input-group full-width">
-              <label>SPECIFICATIONS & BATCH QUANTITY</label>
-              <textarea rows="3" placeholder="Specify quantities, material grade, key tolerances, surface finish, or CAD format..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-submit full-width">SUBMIT RFQ FOR TECHNICAL REVIEW</button>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit RFQ for Technical Review</button>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Minimal Footer -->
-  <footer class="site-footer">
-    <div class="container footer-flex">
-      <span>QUANTAMORPH LIMITED // PRECISION CNC MACHINING & MECHANICAL DESIGN</span>
-      <span>© 2026 QUANTAMORPH LIMITED. ALL RIGHTS RESERVED.</span>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Quantamorph Limited</span>
+        <p>Bespoke CNC Manufacturing & Mechanical Design Engineering.</p>
+      </div>
+      <div class="footer-copy">
+        <p>© 2026 Quantamorph Limited. All rights reserved.</p>
+      </div>
     </div>
   </footer>
-
-  <!-- Interactive 3D WebGL Script -->
-  <script src="script.js"></script>
 </body>
 </html>
