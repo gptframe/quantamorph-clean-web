@@ -3,198 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quantamorph Limited — Precision Mechanical Engineering & Advanced Manufacturing</title>
-  <meta name="description" content="Quantamorph Limited manufactures precision CNC machined components, tooling, fixtures, and provides mechanical CAD design services.">
+  <title>Quantamorph Limited</title>
+  <meta name="description" content="Quantamorph Limited — Mechanical design and manufacturing.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- Three.js CDN for interactive 3D WebGL viewport -->
+  <!-- Three.js for clean 3D mechanical transformation animation -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-  <!-- Fixed 3D WebGL Background Canvas -->
+  <!-- Fixed 3D Canvas Background -->
   <canvas id="webgl-canvas"></canvas>
 
-  <!-- Sticky Top Navigation -->
+  <!-- Clean Top Navigation -->
   <header class="header">
     <div class="header-container">
       <a href="#" class="logo">Quantamorph</a>
       <nav class="nav">
-        <a href="#overview">Overview</a>
-        <a href="#stage-1">Raw Stock</a>
-        <a href="#stage-2">Roughing</a>
-        <a href="#stage-3">Finishing</a>
-        <a href="#stage-4">Inspection</a>
-        <a href="#stage-5">Dispatch</a>
-        <a href="#contact" class="nav-cta">Get a Quote</a>
+        <a href="#process">Process</a>
+        <a href="#services">What We Do</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Content Stages -->
   <main class="content-wrapper">
-    <!-- Hero / Stage 0: Overview -->
-    <section id="overview" class="stage-section hero-stage">
+    <!-- Hero Section -->
+    <section class="stage-section hero-stage">
       <div class="container hero-inner">
-        <div class="eyebrow">The Manufacturing Lifecycle</div>
-        <h1 class="hero-title">From raw billet<br>to finished precision.</h1>
+        <h1 class="hero-title">Design. Manufacture. Deliver.</h1>
         <p class="hero-subtitle">
-          Experience the physical transformation of raw engineering stock into a fully finished, CMM-inspected mechanical component—manufactured to micron tolerances.
+          We handle the complete manufacturing journey from design and raw material to precision machining, inspection, and delivery.
         </p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Submit an RFQ</a>
-          <a href="#stage-1" class="btn btn-secondary">Scroll to Transform 3D Part</a>
-        </div>
-        <div class="status-hud">
-          <span class="hud-dot"></span>
-          <span id="hud-stage-name">STAGE 0 // RAW ENGINEERING BILLET</span>
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
         </div>
       </div>
     </section>
 
-    <!-- Stage 1: Raw Stock Billet -->
-    <section id="stage-1" class="stage-section">
+    <!-- Scroll Section 1: Raw Material -->
+    <section id="process" class="stage-section">
       <div class="container stage-grid">
         <div class="stage-card">
-          <div class="card-step">01 // RAW STOCK</div>
-          <h2>Certified Raw Material</h2>
-          <p>The manufacturing process begins with solid, ultrasound-tested rectangular billet stock in aerospace aluminium, stainless steel, or hardened alloy.</p>
-          <ul class="spec-list">
-            <li><span>Material Grade</span><strong>Aluminium 6082-T6 / EN19 Steel</strong></li>
-            <li><span>Initial State</span><strong>Solid Rectangular Billet</strong></li>
-            <li><span>Traceability</span><strong>100% Mill Test Certification</strong></li>
-          </ul>
+          <span class="step-num">01</span>
+          <h2>Raw Material</h2>
+          <p>We source certified bar stock and billets ready for production.</p>
         </div>
       </div>
     </section>
 
-    <!-- Stage 2: CNC Milling & Roughing -->
-    <section id="stage-2" class="stage-section">
+    <!-- Scroll Section 2: Turning -->
+    <section class="stage-section">
       <div class="container stage-grid reverse">
         <div class="stage-card">
-          <div class="card-step">02 // ROUGHING & DRILLING</div>
-          <h2>High-Feed CNC Roughing</h2>
-          <p>High-power CNC milling centers evacuate bulk material, plunge primary drilling patterns, and machine deep internal pocket channels.</p>
-          <ul class="spec-list">
-            <li><span>Operation</span><strong>High-Feed Pocketing & Plunge Drilling</strong></li>
-            <li><span>Tooling</span><strong>Carbide Multi-Flute Roughing Endmills</strong></li>
-            <li><span>Stock Removal</span><strong>Up to 70% bulk material evacuated</strong></li>
-          </ul>
+          <span class="step-num">02</span>
+          <h2>Turning & Facing</h2>
+          <p>Precision lathe turning to shape the outer diameters and faces.</p>
         </div>
       </div>
     </section>
 
-    <!-- Stage 3: Semi-Finishing & Precision Finishing -->
-    <section id="stage-3" class="stage-section">
+    <!-- Scroll Section 3: Drilling & Milling -->
+    <section class="stage-section">
       <div class="container stage-grid">
         <div class="stage-card">
-          <div class="card-step">03 // FINISHING & GD&T</div>
-          <h2>Precision 5-Axis Finishing</h2>
-          <p>High-speed finish passes generate fine-pitch tapped threads, chamfered edge details, counterbores, and mirror surface finishes down to Ra 0.4 µm.</p>
-          <ul class="spec-list">
-            <li><span>Tolerances</span><strong>Down to ±0.005 mm</strong></li>
-            <li><span>Feature Detailing</span><strong>Bores, Keyways, Chamfers & Taps</strong></li>
-            <li><span>Surface Texture</span><strong>Precision Milled / Ground Surface</strong></li>
-          </ul>
+          <span class="step-num">03</span>
+          <h2>Drilling & Milling</h2>
+          <p>CNC drilling and milling operations to create required features.</p>
         </div>
       </div>
     </section>
 
-    <!-- Stage 4: Quality & CMM Metrology -->
-    <section id="stage-4" class="stage-section">
+    <!-- Scroll Section 4: Threading -->
+    <section class="stage-section">
       <div class="container stage-grid reverse">
-        <div class="stage-card highlight">
-          <div class="card-step">04 // QUALITY & METROLOGY</div>
-          <h2>Multi-Axis CMM Inspection</h2>
-          <p>Every critical datum, hole concentricity, and surface profile is verified on coordinate measuring machines and digital height gauges before sign-off.</p>
-          <ul class="spec-list">
-            <li><span>Metrology Rig</span><strong>CMM & Mitutoyo Digital Micrometers</strong></li>
-            <li><span>Verification</span><strong>100% GD&T True Position & Runout</strong></li>
-            <li><span>Deliverable</span><strong>Signed Dimensional Inspection Report (DIR)</strong></li>
-          </ul>
+        <div class="stage-card">
+          <span class="step-num">04</span>
+          <h2>Threading & Finishing</h2>
+          <p>Single-point threading and fine finishing of the component.</p>
         </div>
       </div>
     </section>
 
-    <!-- Stage 5: Protective Packing & Global Dispatch -->
-    <section id="stage-5" class="stage-section">
+    <!-- Scroll Section 5: Quality Inspection -->
+    <section class="stage-section">
       <div class="container stage-grid">
         <div class="stage-card">
-          <div class="card-step">05 // PACKING & DISPATCH</div>
-          <h2>Corrosion-Protected Delivery</h2>
-          <p>Components are ultrasonic cleaned, treated with VCI anti-corrosion protection, laser-etched with part numbers, and packed in secure custom foam for direct delivery.</p>
-          <ul class="spec-list">
-            <li><span>Protection</span><strong>VCI Anti-Corrosion Wrap & Foam Clamping</strong></li>
-            <li><span>Identification</span><strong>Laser Part Number & Batch QR Marking</strong></li>
-            <li><span>Delivery</span><strong>Direct to Client Assembly Lines</strong></li>
-          </ul>
+          <span class="step-num">05</span>
+          <h2>Quality & Inspection</h2>
+          <p>Dimensional checking and quality reports prepared before release.</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact & RFQ Section -->
+    <!-- Scroll Section 6: Packing & Delivery -->
+    <section class="stage-section">
+      <div class="container stage-grid reverse">
+        <div class="stage-card">
+          <span class="step-num">06</span>
+          <h2>Packaging & Delivery</h2>
+          <p>Protective packaging and direct dispatch to your destination.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summary: What We Do -->
+    <section id="services" class="stage-section">
+      <div class="container">
+        <div class="summary-card">
+          <h2>What We Do</h2>
+          <div class="steps-flow">
+            <div class="flow-step">
+              <span class="flow-tag">Design</span>
+              <p>CAD modeling & drawings</p>
+            </div>
+            <div class="flow-step">
+              <span class="flow-tag">Procurement</span>
+              <p>Raw material sourcing</p>
+            </div>
+            <div class="flow-step">
+              <span class="flow-tag">CNC & VMC</span>
+              <p>Turning, milling & machining</p>
+            </div>
+            <div class="flow-step">
+              <span class="flow-tag">Quality</span>
+              <p>Inspection & quality reports</p>
+            </div>
+            <div class="flow-step">
+              <span class="flow-tag">Dispatch</span>
+              <p>Packaging & delivery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple Contact Section -->
     <section id="contact" class="stage-section contact-stage">
       <div class="container">
         <div class="contact-card">
-          <div class="section-tag">Direct Technical Intake</div>
-          <h2 class="section-title">Submit an RFQ or Component Drawing</h2>
-          <p class="section-desc">Share your 3D CAD models (STEP/IGES), 2D manufacturing prints, or batch requirements for review and quotation.</p>
+          <h2>Request a Quote</h2>
+          <p class="contact-sub">Send us your drawing, CAD file, or project requirement.</p>
 
           <form class="contact-form" action="mailto:info@quantamorph.com" method="post" enctype="text/plain">
             <div class="form-row">
-              <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" placeholder="John Doe" required>
-              </div>
-              <div class="form-group">
-                <label>Company Name</label>
-                <input type="text" placeholder="Acme Engineering Ltd" required>
-              </div>
+              <input type="text" placeholder="Your Name" required>
+              <input type="text" placeholder="Company Name" required>
             </div>
-
             <div class="form-row">
-              <div class="form-group">
-                <label>Work Email</label>
-                <input type="email" placeholder="john@company.co.uk" required>
-              </div>
-              <div class="form-group">
-                <label>Manufacturing Requirement</label>
-                <select>
-                  <option>CNC Batch Component Manufacture (Milling / Turning)</option>
-                  <option>Checking Fixtures & Tooling Manufacture</option>
-                  <option>Mechanical CAD Design & 2D Prints</option>
-                  <option>Special Purpose Machine (SPM)</option>
-                </select>
-              </div>
+              <input type="email" placeholder="Email Address" required>
+              <input type="text" placeholder="Phone Number">
             </div>
-
-            <div class="form-group">
-              <label>Project Details / Specification</label>
-              <textarea rows="4" placeholder="Specify batch quantity, material grade, key tolerances, or CAD requirements..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-block">Submit RFQ for Technical Review</button>
+            <textarea rows="4" placeholder="Briefly describe your project or component requirements..."></textarea>
+            <button type="submit" class="btn btn-primary btn-block">Send Enquiry</button>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Clean Minimal Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="footer-logo">Quantamorph Limited</span>
-        <p>Bespoke CNC Manufacturing & Mechanical Design Engineering.</p>
-      </div>
-      <div class="footer-copy">
-        <p>© 2026 Quantamorph Limited. All rights reserved.</p>
-      </div>
+      <span>Quantamorph Limited</span>
+      <span>© 2026 Quantamorph Limited. All rights reserved.</span>
     </div>
   </footer>
 
-  <!-- 3D Scroll Transformation Engine -->
+  <!-- 3D Turning, Drilling & Threading Animation Script -->
   <script src="script.js"></script>
 </body>
 </html>
