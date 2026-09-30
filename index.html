@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quantamorph Limited — Precision Mechanical Design & CNC Manufacture</title>
-  <meta name="description" content="Quantamorph Limited delivers bespoke precision CNC components, tooling, fixtures, and mechanical CAD design services.">
+  <title>Quantamorph Limited — Precision Mechanical Engineering & Advanced Manufacturing</title>
+  <meta name="description" content="Quantamorph Limited manufactures precision CNC machined components, tooling, fixtures, and provides mechanical CAD design services.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- Three.js CDN for interactive 3D WebGL viewport -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Fixed 3D WebGL Background Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Sticky Top Navigation -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="#" class="brand-logo">
@@ -19,155 +24,123 @@
         <span class="brand-name">QUANTAMORPH</span>
       </a>
       <nav class="main-nav">
+        <a href="#overview">Overview</a>
         <a href="#services">Services</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#cad">CAD & DFM</a>
-        <a href="#contact" class="btn-nav">Request Quote</a>
+        <a href="#specs">Specifications</a>
+        <a href="#contact" class="btn-nav">Request Quotation</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container hero-content">
-      <div class="badge">PRECISION ENGINEERING & ADVANCED MANUFACTURING</div>
-      <h1 class="hero-title">Precision Components.<br>Designed & Manufactured.</h1>
-      <p class="hero-subtitle">
-        Quantamorph Limited manufactures bespoke precision CNC components, tooling, fixtures, and fabricated assemblies—backed by end-to-end mechanical CAD design and DFM engineering.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Submit an RFQ</a>
-        <a href="#capabilities" class="btn btn-secondary">Explore Capabilities</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Two Core Pillars -->
-  <section id="services" class="section services-section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Our Core Offerings</h2>
-        <p>A unified workflow from digital CAD engineering to finished, inspected mechanical components.</p>
-      </div>
-
-      <div class="services-grid">
-        <!-- Pillar 1 -->
-        <div class="service-card">
-          <div class="card-icon">01</div>
-          <h3>Mechanical Design Services</h3>
-          <p>Complete mechanical CAD design and production engineering support for complex hardware and tooling requirements.</p>
-          <ul class="service-list">
-            <li>3D CAD Modelling & Multi-Component Assemblies</li>
-            <li>2D Manufacturing Prints with strict GD&T (BS 8888 / ISO)</li>
-            <li>Design for Manufacture (DFM) & Cost Optimisation</li>
-            <li>Reverse Engineering from Physical Components & 3D Scans</li>
-            <li>Tooling, Jigs, Checking Fixtures & Special Machinery Design</li>
-          </ul>
-          <div class="card-tag">Fusion 360 · SolidWorks · CATIA</div>
-        </div>
-
-        <!-- Pillar 2 -->
-        <div class="service-card highlight">
-          <div class="card-icon">02</div>
-          <h3>CNC Manufacturing Support</h3>
-          <p>High-precision batch manufacturing, tooling manufacture, and quality-controlled delivery to tight tolerances.</p>
-          <ul class="service-list">
-            <li>2-, 3-, 4- and 5-Axis Precision CNC Milling & Turning</li>
-            <li>Press Tool Spares, Spool Retainers & Bronze Slide Plates</li>
-            <li>Custom Inspection Nest Fixtures & Robotic Gripper Tooling</li>
-            <li>Batch Production in Aluminium, Stainless, Alloy Steels & Plastics</li>
-            <li>Surface Finishing: Anodizing, Passivation, Heat Treatment, Plating</li>
-          </ul>
-          <div class="card-tag">Tolerances down to ±0.005 mm</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technical Capabilities Grid -->
-  <section id="capabilities" class="section capabilities-section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Manufacturing Capabilities</h2>
-        <p>Built for industrial automation, automotive tooling, and bespoke machinery builders.</p>
-      </div>
-
-      <div class="grid-3">
-        <div class="cap-box">
-          <h4>CNC Milling & Turning</h4>
-          <p>Multi-axis high-speed machining for complex geometric features, deep pockets, and high-aspect components.</p>
-        </div>
-        <div class="cap-box">
-          <h4>Tooling & Fixturing</h4>
-          <p>Bespoke checking fixtures, assembly jigs, robot risers, torch brackets, and custom workholding details.</p>
-        </div>
-        <div class="cap-box">
-          <h4>Press Die Components</h4>
-          <p>High-tensile spool retainers, graphite-plugged wear plates, stripper bolts, and hardened punch blocks.</p>
-        </div>
-        <div class="cap-box">
-          <h4>Material Spectrum</h4>
-          <p>Aluminium 6082/7075, Stainless 304/316, 42CrMo4 / EN19, Tool Steels (O1/D2), Brass, Bronze, Delrin, PEEK.</p>
-        </div>
-        <div class="cap-box">
-          <h4>Quality & Metrology</h4>
-          <p>100% dimensional inspection, CMM verification, surface roughness testing, and complete material certs.</p>
-        </div>
-        <div class="cap-box">
-          <h4>Delivery & Support</h4>
-          <p>Dedicated project management from drawing review and DFM feedback through finished component delivery.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CAD & Software Expertise -->
-  <section id="cad" class="section cad-section">
-    <div class="container">
-      <div class="cad-inner">
-        <div class="cad-text">
-          <div class="badge">NATIVE CAD PIPELINE</div>
-          <h2>Seamless CAD Integration</h2>
-          <p>We work directly inside your preferred engineering ecosystem. Send us native files, STEP, IGES, or 2D manufacturing drawings for instant intake and manufacturing review.</p>
-          <div class="software-pills">
-            <span>Autodesk Fusion 360</span>
-            <span>Dassault Systèmes SolidWorks</span>
-            <span>Dassault Systèmes CATIA</span>
-            <span>STEP / IGES / DXF</span>
+  <!-- 3D Scroll Hero Section -->
+  <main class="content-wrapper">
+    <section id="overview" class="hero-stage">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hud-tag">SYSTEM / 01 // 3D PRECISION ENGINE</div>
+          <h1 class="hero-title">Precision Components.<br><span class="gradient-text">Designed & Manufactured.</span></h1>
+          <p class="hero-desc">
+            Quantamorph Limited manufactures bespoke precision CNC components, custom tooling, fixtures, and fabricated sub-assemblies—supported by professional CAD design and DFM engineering.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Submit Technical RFQ</a>
+            <a href="#services" class="btn btn-secondary">Explore Capabilities</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact & RFQ Form -->
-  <section id="contact" class="section contact-section">
-    <div class="container contact-container">
-      <div class="contact-header">
-        <h2>Submit an Enquiry or RFQ</h2>
-        <p>Send your drawings, CAD models (STEP/IGES), or project requirements for technical review and quotation.</p>
+      <div class="scroll-indicator">
+        <span>SCROLL TO EXPLORE 3D ASSEMBLY</span>
+        <div class="mouse-icon"></div>
       </div>
+    </section>
 
-      <div class="contact-box">
-        <form class="rfq-form" action="mailto:info@quantamorph.com" method="post" enctype="text/plain">
-          <div class="form-row">
-            <div class="form-group">
-              <label>Full Name</label>
-              <input type="text" placeholder="e.g. John Doe" required>
-            </div>
-            <div class="form-group">
-              <label>Company Name</label>
-              <input type="text" placeholder="e.g. Acme Automation Ltd" required>
-            </div>
+    <!-- Stage 2: Mechanical Design Services -->
+    <section id="services" class="stage-section">
+      <div class="container stage-grid">
+        <div class="glass-card">
+          <div class="card-num">CORE PILLAR // 01</div>
+          <h2>Mechanical Design Services</h2>
+          <p class="card-lead">End-to-end 3D CAD design, manufacturing prints, and design for manufacture (DFM) verification for custom hardware and tooling.</p>
+          <ul class="spec-list">
+            <li><span>3D CAD Assemblies</span><strong>Fusion 360 · SolidWorks · CATIA</strong></li>
+            <li><span>Manufacturing Prints</span><strong>2D Drawings with Strict GD&T</strong></li>
+            <li><span>Engineering Review</span><strong>DFM & Cost-Tolerance Optimisation</strong></li>
+            <li><span>Reverse Engineering</span><strong>Physical Parts to Parametric CAD</strong></li>
+            <li><span>Tooling & Fixtures</span><strong>Checking Fixtures & Nest Tooling</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stage 3: CNC Manufacturing Support -->
+    <section class="stage-section">
+      <div class="container stage-grid reverse">
+        <div class="glass-card highlight">
+          <div class="card-num">CORE PILLAR // 02</div>
+          <h2>CNC Manufacturing Support</h2>
+          <p class="card-lead">Precision machining, multi-axis milling and turning, and quality-controlled delivery to tight tolerances.</p>
+          <ul class="spec-list">
+            <li><span>Machining Envelope</span><strong>2-, 3-, 4- and 5-Axis Milling & Turning</strong></li>
+            <li><span>Achievable Tolerance</span><strong>Down to ±0.005 mm</strong></li>
+            <li><span>Material Spectrum</span><strong>Aluminium, Stainless, EN19, Bronze, Delrin</strong></li>
+            <li><span>Tooling Components</span><strong>Spool Retainers, Guide Plates, Punch Blocks</strong></li>
+            <li><span>Quality & Metrology</span><strong>100% CMM & Dimensional Inspection</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stage 4: Technical Specs Grid -->
+    <section id="specs" class="stage-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="hud-tag">TECHNICAL CAPABILITY MATRIX</div>
+          <h2>Engineering Specifications</h2>
+        </div>
+        <div class="matrix-grid">
+          <div class="matrix-card">
+            <h4>Automation Fixtures</h4>
+            <p>Robot end-of-arm tooling (EOAT), gripper fingers, sensor mounts, and custom pneumatic manifolds.</p>
           </div>
+          <div class="matrix-card">
+            <h4>Press Die Tooling</h4>
+            <p>High-tensile spool retainers, graphite-embedded bronze wear plates, stripper bolts, and guide pillars.</p>
+          </div>
+          <div class="matrix-card">
+            <h4>Multi-Axis Machining</h4>
+            <p>Complex 3D contoured surfaces, high-aspect ratio turned parts, and thin-walled precision housings.</p>
+          </div>
+          <div class="matrix-card">
+            <h4>Surface Treatments</h4>
+            <p>Hard anodising (Type III), black oxide, passivation, zinc/nickel plating, and induction hardening.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label>Work Email</label>
+    <!-- Stage 5: RFQ Contact Stage -->
+    <section id="contact" class="stage-section contact-stage">
+      <div class="container">
+        <div class="glass-form-card">
+          <div class="hud-tag">DIRECT TECHNICAL INTAKE</div>
+          <h2>Submit an RFQ or Drawing</h2>
+          <p class="form-sub">Upload your STEP, IGES, or 2D manufacturing prints for technical DFM review and quotation.</p>
+
+          <form class="rfq-grid-form" action="mailto:info@quantamorph.com" method="post" enctype="text/plain">
+            <div class="input-group">
+              <label>FULL NAME</label>
+              <input type="text" placeholder="John Doe" required>
+            </div>
+            <div class="input-group">
+              <label>COMPANY NAME</label>
+              <input type="text" placeholder="Acme Automation Ltd" required>
+            </div>
+            <div class="input-group">
+              <label>WORK EMAIL</label>
               <input type="email" placeholder="name@company.co.uk" required>
             </div>
-            <div class="form-group">
-              <label>Service Required</label>
+            <div class="input-group">
+              <label>PRIMARY REQUIREMENT</label>
               <select>
                 <option>CNC Batch Component Manufacture</option>
                 <option>Mechanical CAD Design & 2D Prints</option>
@@ -175,30 +148,26 @@
                 <option>Reverse Engineering & DFM Review</option>
               </select>
             </div>
-          </div>
-
-          <div class="form-group">
-            <label>Project Details / Specification</label>
-            <textarea rows="4" placeholder="Describe component quantity, material, tolerances, or CAD requirements..."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-block">Send Enquiry / Request Quotation</button>
-        </form>
+            <div class="input-group full-width">
+              <label>SPECIFICATIONS / SCOPE</label>
+              <textarea rows="3" placeholder="Specify quantities, material grade, key tolerances, or CAD format..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit full-width">SUBMIT RFQ FOR TECHNICAL REVIEW</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Footer -->
+  <!-- Minimal Footer -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="brand-name">QUANTAMORPH LIMITED</span>
-        <p>Precision Mechanical Design & CNC Manufacturing Support.</p>
-      </div>
-      <div class="footer-copy">
-        <p>© 2026 Quantamorph Limited. All rights reserved.</p>
-      </div>
+    <div class="container footer-flex">
+      <span>QUANTAMORPH LIMITED // PRECISION ENGINEERING & CNC MANUFACTURE</span>
+      <span>© 2026 QUANTAMORPH LIMITED. ALL RIGHTS RESERVED.</span>
     </div>
   </footer>
+
+  <!-- Interactive 3D WebGL Script -->
+  <script src="script.js"></script>
 </body>
 </html>
