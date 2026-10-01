@@ -1,177 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quantamorph Limited</title>
-  <meta name="description" content="Quantamorph Limited — Mechanical design and manufacturing.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quantamorph supplies bespoke CNC-machined components, fixtures and tooling for automation, test equipment and special-purpose machinery.">
+  <title>Quantamorph | Precision CNC Components</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- Three.js for clean 3D mechanical transformation animation -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-  <!-- Fixed 3D Canvas Background -->
-  <canvas id="webgl-canvas"></canvas>
-
-  <!-- Clean Top Navigation -->
-  <header class="header">
-    <div class="header-container">
-      <a href="#" class="logo">Quantamorph</a>
-      <nav class="nav">
-        <a href="#process">Process</a>
-        <a href="#services">What We Do</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </nav>
-    </div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Quantamorph home"><span class="brand-mark">Q</span><span>Quantamorph</span></a>
+    <button class="menu-button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav"><a href="#capabilities">Capabilities</a><a href="#applications">Applications</a><a href="#process">Process</a><a class="nav-cta" href="#rfq">Request a quote</a></nav>
   </header>
-
-  <main class="content-wrapper">
-    <!-- Hero Section -->
-    <section class="stage-section hero-stage">
-      <div class="container hero-inner">
-        <h1 class="hero-title">Design. Manufacture. Deliver.</h1>
-        <p class="hero-subtitle">
-          We handle the complete manufacturing journey from design and raw material to precision machining, inspection, and delivery.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Get in Touch</a>
-        </div>
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">CNC MACHINING SUPPORT FOR ENGINEERING TEAMS</p>
+        <h1>Precision components for projects that cannot wait.</h1>
+        <p class="intro">Quantamorph supplies bespoke CNC-machined components, fixtures and tooling for automation, test equipment and special-purpose machinery—from urgent one-off parts to repeat batches.</p>
+        <div class="actions"><a class="button button-dark" href="#rfq">Request a CNC quote</a><a class="button button-quiet" href="#capabilities">Explore capabilities <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="part-stage" aria-label="Abstract technical component illustration">
+        <div class="halo"></div><div class="part"><i></i><b></b><em></em></div><div class="axis axis-x"></div><div class="axis axis-y"></div>
+        <p class="stage-label">CUSTOM PARTS / FIXTURES / TOOLING</p>
       </div>
     </section>
-
-    <!-- Scroll Section 1: Raw Material -->
-    <section id="process" class="stage-section">
-      <div class="container stage-grid">
-        <div class="stage-card">
-          <span class="step-num">01</span>
-          <h2>Raw Material</h2>
-          <p>We source certified bar stock and billets ready for production.</p>
-        </div>
+    <section class="proof section">
+      <p>Built for engineering teams that need a practical route from drawing to component.</p>
+      <div><span>ONE-OFF</span><span>PROTOTYPE</span><span>FIXTURE</span><span>REPEAT BATCH</span></div>
+    </section>
+    <section id="capabilities" class="section capability-section">
+      <div class="section-heading"><p class="eyebrow">WHAT QUANTAMORPH SUPPORTS</p><h2>Parts that fit the project, not a catalogue.</h2></div>
+      <div class="cards">
+        <article><span class="card-number">01</span><h3>CNC-machined components</h3><p>Bespoke parts for prototypes, machine builds, urgent replacement requirements and repeat production.</p></article>
+        <article><span class="card-number">02</span><h3>Fixtures, tooling & test parts</h3><p>Custom plates, brackets, nests, manifolds, adaptors, jigs, workholding and mechanical test-rig details.</p></article>
+        <article><span class="card-number">03</span><h3>Mechanical CAD support</h3><p>Production-ready CAD, drawings, GD&T detailing and DFM review when your team needs additional capacity.</p></article>
       </div>
     </section>
-
-    <!-- Scroll Section 2: Turning -->
-    <section class="stage-section">
-      <div class="container stage-grid reverse">
-        <div class="stage-card">
-          <span class="step-num">02</span>
-          <h2>Turning & Facing</h2>
-          <p>Precision lathe turning to shape the outer diameters and faces.</p>
-        </div>
-      </div>
+    <section class="parts-section section">
+      <div><p class="eyebrow">TYPICAL REQUIREMENTS</p><h2>Made for the detail between concept and machine.</h2></div>
+      <ul class="parts-list"><li>Robot adaptor plates <span>↗</span></li><li>Sensor brackets and mounts <span>↗</span></li><li>Vacuum and tooling plates <span>↗</span></li><li>Test fixtures and nests <span>↗</span></li><li>Manifolds and machined interfaces <span>↗</span></li><li>Custom jigs and workholding <span>↗</span></li></ul>
     </section>
-
-    <!-- Scroll Section 3: Drilling & Milling -->
-    <section class="stage-section">
-      <div class="container stage-grid">
-        <div class="stage-card">
-          <span class="step-num">03</span>
-          <h2>Drilling & Milling</h2>
-          <p>CNC drilling and milling operations to create required features.</p>
-        </div>
-      </div>
+    <section id="applications" class="applications section">
+      <div class="section-heading"><p class="eyebrow">APPLICATIONS</p><h2>For machinery builders solving complex problems.</h2></div>
+      <div class="application-grid"><div>Automation <br>& Robotics</div><div>Automotive & <br>E-drive Test</div><div>Special-purpose <br>Machinery</div><div>Inspection, Assembly <br>& Test Systems</div></div>
     </section>
-
-    <!-- Scroll Section 4: Threading -->
-    <section class="stage-section">
-      <div class="container stage-grid reverse">
-        <div class="stage-card">
-          <span class="step-num">04</span>
-          <h2>Threading & Finishing</h2>
-          <p>Single-point threading and fine finishing of the component.</p>
-        </div>
-      </div>
+    <section id="process" class="process section">
+      <div class="section-heading"><p class="eyebrow">A SIMPLE START</p><h2>Send the detail. We review the requirement.</h2></div>
+      <ol><li><b>01</b><div><h3>Share your file</h3><p>Send a drawing, PDF, DXF or STEP model with the basic requirement.</p></div></li><li><b>02</b><div><h3>Confirm the essentials</h3><p>Quantity, material, finish, tolerance and required delivery date.</p></div></li><li><b>03</b><div><h3>Review the route forward</h3><p>Quantamorph reviews the requirement before preparing the next steps.</p></div></li></ol>
     </section>
-
-    <!-- Scroll Section 5: Quality Inspection -->
-    <section class="stage-section">
-      <div class="container stage-grid">
-        <div class="stage-card">
-          <span class="step-num">05</span>
-          <h2>Quality & Inspection</h2>
-          <p>Dimensional checking and quality reports prepared before release.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Scroll Section 6: Packing & Delivery -->
-    <section class="stage-section">
-      <div class="container stage-grid reverse">
-        <div class="stage-card">
-          <span class="step-num">06</span>
-          <h2>Packaging & Delivery</h2>
-          <p>Protective packaging and direct dispatch to your destination.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Summary: What We Do -->
-    <section id="services" class="stage-section">
-      <div class="container">
-        <div class="summary-card">
-          <h2>What We Do</h2>
-          <div class="steps-flow">
-            <div class="flow-step">
-              <span class="flow-tag">Design</span>
-              <p>CAD modeling & drawings</p>
-            </div>
-            <div class="flow-step">
-              <span class="flow-tag">Procurement</span>
-              <p>Raw material sourcing</p>
-            </div>
-            <div class="flow-step">
-              <span class="flow-tag">CNC & VMC</span>
-              <p>Turning, milling & machining</p>
-            </div>
-            <div class="flow-step">
-              <span class="flow-tag">Quality</span>
-              <p>Inspection & quality reports</p>
-            </div>
-            <div class="flow-step">
-              <span class="flow-tag">Dispatch</span>
-              <p>Packaging & delivery</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Simple Contact Section -->
-    <section id="contact" class="stage-section contact-stage">
-      <div class="container">
-        <div class="contact-card">
-          <h2>Request a Quote</h2>
-          <p class="contact-sub">Send us your drawing, CAD file, or project requirement.</p>
-
-          <form class="contact-form" action="mailto:info@quantamorph.com" method="post" enctype="text/plain">
-            <div class="form-row">
-              <input type="text" placeholder="Your Name" required>
-              <input type="text" placeholder="Company Name" required>
-            </div>
-            <div class="form-row">
-              <input type="email" placeholder="Email Address" required>
-              <input type="text" placeholder="Phone Number">
-            </div>
-            <textarea rows="4" placeholder="Briefly describe your project or component requirements..."></textarea>
-            <button type="submit" class="btn btn-primary btn-block">Send Enquiry</button>
-          </form>
-        </div>
-      </div>
+    <section id="rfq" class="rfq section">
+      <div><p class="eyebrow">START AN ENQUIRY</p><h2>Have a drawing ready?</h2><p>Prepare the key details below, then send your enquiry through your usual Quantamorph contact channel. Attach the drawing or model when you send it.</p></div>
+      <div class="rfq-card"><p class="mono">INCLUDE WITH YOUR RFQ</p><ul><li>Part description and quantity</li><li>Drawing, PDF, DXF or STEP model</li><li>Material and finish, if known</li><li>Tolerances or critical requirements</li><li>Required delivery date</li></ul><button class="button button-dark copy-button" type="button">Copy RFQ checklist</button><p class="copy-status" aria-live="polite"></p></div>
     </section>
   </main>
-
-  <!-- Clean Minimal Footer -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>Quantamorph Limited</span>
-      <span>© 2026 Quantamorph Limited. All rights reserved.</span>
-    </div>
-  </footer>
-
-  <!-- 3D Turning, Drilling & Threading Animation Script -->
+  <footer><a class="brand" href="#top"><span class="brand-mark">Q</span><span>Quantamorph</span></a><p>Precision CNC components for engineering projects.</p><p class="mono">© <span id="year"></span> QUANTAMORPH LIMITED</p></footer>
   <script src="script.js"></script>
 </body>
 </html>

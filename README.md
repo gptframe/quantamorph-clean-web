@@ -1,10 +1,18 @@
-# Quantamorph Limited — Official Clean Website
+# Quantamorph website
 
-This repository contains the clean, performance-optimized, professional website for **Quantamorph Limited**, presenting our two core industrial pillars:
-1. **Mechanical Design Services** (Fusion 360, SolidWorks, CATIA, GD&T, DFM, Reverse Engineering)
-2. **CNC Manufacturing Support** (2-, 3-, 5-Axis Milling, Turning, Tooling, Fixtures, Batch Component Delivery)
+Static marketing website for Quantamorph Limited. This branch is an isolated homepage rebuild focused on generating qualified CNC-machining enquiries from UK engineering businesses.
 
-## Live Preview
-Deployable via GitHub Pages:
-- Repository: `https://github.com/gptframe/quantamorph-clean-web`
-- Pages URL: `https://gptframe.github.io/quantamorph-clean-web/`
+## Files
+- `index.html` — page structure and copy
+- `style.css` — responsive visual system
+- `script.js` — menu, RFQ checklist copier and small client-side interactions
+
+## Content rules
+- CNC-machined components are the primary offer.
+- CAD support is secondary.
+- Do not add claims about certifications, tolerances, lead times, machines, customers or manufacturing location without written approval.
+- Do not add a file-upload or email form until a functioning approved enquiry route is configured.
+- Prefer approved real project imagery or CAD visuals over stock/fake factory images.
+
+## Deployment
+This branch is not live. Review it through GitHub before any pull request is opened or merged into `main`.
